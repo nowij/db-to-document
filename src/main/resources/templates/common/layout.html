@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout(title, content)">
+<head>
+    <meta charset="UTF-8">
+    <title th:replace="${title}">App</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<header class="bg-blue-600 text-white p-4">
+    DB 설계서 생성기
+</header>
+
+<main class="p-6" th:replace="${content}">
+    내용
+</main>
+
+</body>
+</html>

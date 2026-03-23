@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: db-to-document
+  thymeleaf:
+    cache: false
