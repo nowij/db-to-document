@@ -3,3 +3,18 @@ spring:
     name: db-to-document
   thymeleaf:
     cache: false
+  # 멀티DB 설정
+  datasource:
+    mysql:
+      jdbc-url: 접속정보
+      username: user
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    postgres:
+      jdbc-url: 접속정보
+      username: user
+      password: password
+      driver-class-name: org.postgresql.Driver
+
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
